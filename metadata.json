@@ -1,0 +1,9 @@
+{
+  "name": "CBC Solar Manager",
+  "description": "Sistema de gestão de equipes de energia solar para Vendas, Instalação e Vistorias com geolocalização e inteligência artificial.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}
