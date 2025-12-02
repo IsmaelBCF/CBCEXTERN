@@ -6,6 +6,17 @@ export enum Role {
   INSPECTOR = 'INSPECTOR', // Equipe de Vistoria
 }
 
+export enum LeadTemperature {
+  HOT = 'HOT',
+  WARM = 'WARM',
+  COLD = 'COLD'
+}
+
+export interface Gamification {
+  points: number;
+  temperature: LeadTemperature;
+}
+
 export interface GeoLocation {
   lat: number;
   lng: number;
@@ -29,9 +40,12 @@ export interface VisitRecord {
     grounding?: string;
     structure?: string;
     clientName?: string;
-    contactInfo?: string;
+    contactInfo?: string; // Telefone
+    email?: string;      // E-mail
+    facadePhoto?: string; // Foto específica da fachada
   };
   syncStatus?: 'PENDING' | 'SYNCED';
+  gamification?: Gamification;
 }
 
 export interface User {
@@ -39,6 +53,7 @@ export interface User {
   name: string;
   role: Role;
   avatarUrl: string;
+  points?: number;
 }
 
 export interface MapMarker {

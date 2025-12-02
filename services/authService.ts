@@ -7,35 +7,48 @@ const MOCK_USERS: Record<string, User & { password: string }> = {
     name: 'Gestor Administrativo', 
     role: Role.ADMIN, 
     avatarUrl: 'https://ui-avatars.com/api/?name=Gestor+Admin&background=0D8ABC&color=fff', 
-    password: '123' 
+    password: '123',
+    points: 0
   },
   'vendas@cbc.com': { 
     id: 'user-2', 
     name: 'Carlos Vendas (Externo)', 
     role: Role.PROSPECTOR, 
     avatarUrl: 'https://ui-avatars.com/api/?name=Carlos+Vendas&background=f59e0b&color=fff', 
-    password: '123' 
+    password: '123',
+    points: 120
   },
   'lider@cbc.com': { 
     id: 'user-3', 
     name: 'Ana Líder (Fechamento)', 
     role: Role.SALES_LEADER, 
     avatarUrl: 'https://ui-avatars.com/api/?name=Ana+Lider&background=10b981&color=fff', 
-    password: '123' 
+    password: '123',
+    points: 0
+  },
+  'lider2@cbc.com': { 
+    id: 'user-3b', 
+    name: 'Bruno Fechador', 
+    role: Role.SALES_LEADER, 
+    avatarUrl: 'https://ui-avatars.com/api/?name=Bruno+Fechador&background=059669&color=fff', 
+    password: '123',
+    points: 0
   },
   'tecnico@cbc.com': { 
     id: 'user-4', 
     name: 'Roberto Técnico', 
     role: Role.INSTALLER, 
     avatarUrl: 'https://ui-avatars.com/api/?name=Roberto+Tecnico&background=334155&color=fff', 
-    password: '123' 
+    password: '123',
+    points: 0
   },
   'vistoria@cbc.com': { 
     id: 'user-5', 
     name: 'Marcos Vistoria', 
     role: Role.INSPECTOR, 
     avatarUrl: 'https://ui-avatars.com/api/?name=Marcos+Vistoria&background=8b5cf6&color=fff', 
-    password: '123' 
+    password: '123',
+    points: 0
   },
 };
 
